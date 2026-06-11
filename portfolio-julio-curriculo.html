@@ -123,6 +123,41 @@
     }
     .tag i { font-size: 13px; }
 
+    /* ─── SOCIAL BUTTONS ─── */
+    .hero-btns {
+      display: flex; gap: 10px;
+      justify-content: center; flex-wrap: wrap;
+      position: relative; z-index: 1;
+      margin-top: 20px;
+    }
+
+    .hero-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 13px; font-weight: 500;
+      padding: 9px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: transform 0.18s ease, background 0.18s ease;
+      cursor: pointer;
+    }
+    .hero-btn:hover { transform: translateY(-2px); }
+
+    .btn-linkedin {
+      background: #0A66C2;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .btn-linkedin:hover { background: #0858a8; }
+
+    .btn-github {
+      background: rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.88);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .btn-github:hover { background: rgba(255,255,255,0.18); }
+
+    .hero-btn i { font-size: 16px; }
+
     /* ─── SECTION CARDS ─── */
     .card {
       background: var(--bg-card);
@@ -362,13 +397,21 @@
       <span class="tag"><i class="ti ti-chart-dots"></i> Análise de dados</span>
       <span class="tag"><i class="ti ti-shield-lock"></i> Cibersegurança</span>
     </div>
+    <div class="hero-btns">
+      <a href="https://www.linkedin.com/in/j%C3%BAlio-c%C3%A9sar-gon%C3%A7alves-pereira-7b74a12b8/" target="_blank" rel="noopener" class="hero-btn btn-linkedin">
+        <i class="ti ti-brand-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/JPereiraxz" target="_blank" rel="noopener" class="hero-btn btn-github">
+        <i class="ti ti-brand-github"></i> GitHub
+      </a>
+    </div>
   </div>
 
   <!-- SOBRE MIM -->
   <div class="card reveal">
     <div class="eyebrow"><i class="ti ti-user"></i> Sobre mim</div>
     <p class="body-text">
-      Iniciei minha jornada na tecnologia movido pela curiosidade de entender como a inovação molda o mundo. Cursando Técnico em Informática, transformo esse interesse em soluções práticas — sempre guiado pelo aprendizado contínuo e pela vontade de superar novos desafios a cada etapa.
+      Iniciei minha jornada na tecnologia movido pela curiosidade de entender como a inovação molda o mundo. Cursando Técnico em Informática, transformo esse interesse em soluções práticas sempre guiado pelo aprendizado contínuo e pela vontade de superar novos desafios a cada etapa.
     </p>
   </div>
 
